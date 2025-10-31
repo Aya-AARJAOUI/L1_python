@@ -131,4 +131,30 @@ for n in range(2, 1000):      # On parcourt les nombres de 2 à 999
 
     if est_premier:           # Si aucun diviseur trouvé, c'est un nombre premier
         print(n,end=(',')) 
+#Fin du programme
+
+
+
+N = 0   
+N = int(input("entrez un valeur"))
+
+somme_diviseurs = 0
+for i in range(1, N ):
+    if N % i == 0:
+        somme_diviseurs += i
+if somme_diviseurs == N:
+            print(N, "est un nombre parfait")   
+else:
+            print(N, "n'est pas un nombre parfait")
+           #Fin du programme
+
+
+for i in range(1, 1000):
+    somme_diviseurs = 0
+    for j in range(1, i):
+        if i % j == 0:
+            somme_diviseurs += j
+    if somme_diviseurs == i:
+        print(i,end=(','))
+            
 
